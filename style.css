@@ -1,0 +1,108 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	background-color: #F2F2F2;
+}
+
+.rssHeader{
+	background-color: white;
+	box-shadow: 5px 5px 5px #888888;
+	padding: 20px 0px;
+	width: 70%;
+}
+
+.rssHeader a{
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+.rssBody ul{
+	list-style: none;
+}
+
+.rssBody ul li{
+	text-align: left;
+	box-shadow: 5px 5px 5px #888888;
+	padding: 1px 15px;
+	margin-left: -40px;
+	margin-bottom: 10px;
+	width: 70%;
+}
+
+.rssBody ul li h4{
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.rssBody ul li div{
+	font-size: 14px;
+}
+
+.rssBody ul li p{
+	font-size: 16px;
+}
+
+.rssBody ul li.even{
+	background-color: white;
+}
+
+.rssBody ul li.odd{
+	background-color: #D3D3D3;
+}
+
+.rssBody ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+.scrollToTop{
+	width:50px; 
+	height:50px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top:90vh; /*vorher 75px*/
+	right:40px;
+	display:none;
+	background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+.scrollToTop img{
+	width:50px;
+}
+
+@media screen and (max-width: 767px){
+	.rssHeader{
+		width: 100%;
+	}
+	.rssBody ul li{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.rssHeader{
+		width: 70%;
+	}
+	.rssBody ul li{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.rssHeader{
+		width: 100%;
+	}
+	.rssBody ul li{
+		width: 100%;
+	}
+}
